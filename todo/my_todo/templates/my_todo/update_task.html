@@ -1,0 +1,9 @@
+{% extends 'my_todo/list.html' %}
+
+<h3>Update Task</h3>
+
+<form method="POST" action="">
+    {% csrf_token %}
+    {{form}}
+    <input class="btn btn-success" type="submit" name="Update Task" >
+</form>
